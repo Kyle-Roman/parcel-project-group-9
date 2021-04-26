@@ -232,8 +232,9 @@
     width: 293px;
   }
 }
-.title-wrapper {
+.hero .title-wrapper {
   z-index: 0;
+  min-width: 160px;
   max-width: 218px;
   height: 124px;
   @media screen and (min-width: 768px) {

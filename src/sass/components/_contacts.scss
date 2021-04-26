@@ -1,8 +1,14 @@
 .contacts{
     padding-bottom: 56px;
     background: linear-gradient(
-        var(--accent-text-color)  102px, var(--background-color-main) 102px
-    );
+        var(--accent-text-color)  102px, var(--background-color-main) 102px);
+    @media screen and (min-width: 1280px) {
+        background-image: url(../images/desktop/contacts/bg.png ),linear-gradient(
+            var(--accent-text-color)  102px, var(--background-color-main) 102px);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
 }
 .contacts__container{
     display: flex;
@@ -85,7 +91,7 @@
     }
 }
 .cardlist__title{
-
+    color: #fff;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -101,8 +107,8 @@
     line-height: 1,83em;
     letter-spacing: 0,04em;
     text-transform: uppercase;
-    min-width: 80px;
-    min-height: 16px;
+    width: 80px;
+    height: 16px;
     margin-bottom: 25px;
     @media screen and (min-width: 768px){
     margin-bottom: 30px;
@@ -119,9 +125,12 @@
 }
 .cardlist__title--green{
     background-color: #C2E297;
-    min-width: 135px;
+    width: 130px;
+    height: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
     @media screen and (min-width: 768px){
-        width: 145px;
+        width: 138px;
     }
 }
 .cardlist__wrapper{
